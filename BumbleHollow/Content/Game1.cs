@@ -21,8 +21,9 @@ namespace BumbleHollow
         public LocationManager locMgr = new LocationManager();
         public GameLocation gameLocation = new GameLocation();
 
-        private Texture2D sprite_texture;
-        private Vector2 sprite_position;
+        // sprites
+        public Texture2D sprite_texture;
+        public Vector2 sprite_position;
                     
 
         public Game1()

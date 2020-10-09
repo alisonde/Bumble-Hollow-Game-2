@@ -16,10 +16,9 @@ namespace BumbleHollow
 {
     public class Obj_Block : GameObject
     {
-
-        public Obj_Block(int x, int y) : base(x, y, 48, 48, ObjectID.block)
+        public Obj_Block(int x, int y) : base(x, y, 64, 64, ObjectID.block)
         {
-
+        
         }
 
         public override void Init(Game1 g)
