@@ -34,7 +34,7 @@ namespace BumbleHollow
         public static void Initialize(Game1 g)
         {
             // set screen size
-            ScreenWidth = 2280;
+            ScreenWidth = 1280;
             ScreenHeight = 720;
 
             // init graphics
@@ -43,7 +43,7 @@ namespace BumbleHollow
                 PreferredBackBufferWidth = ScreenWidth,
                 PreferredBackBufferHeight = ScreenHeight,
                 SynchronizeWithVerticalRetrace = VSync,
-                IsFullScreen = true
+                IsFullScreen = false
             };
             graphics.ApplyChanges();
 

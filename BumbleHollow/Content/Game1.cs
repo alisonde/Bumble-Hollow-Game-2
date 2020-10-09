@@ -17,18 +17,17 @@ namespace BumbleHollow
 
     public class Game1 : Game
     {
-
-
         // locations
         public LocationManager locMgr = new LocationManager();
         public GameLocation gameLocation = new GameLocation();
 
         private Texture2D sprite_texture;
-        private Vector2 sprite_position;                    
+        private Vector2 sprite_position;
+                    
 
         public Game1()
-        {
-            ScreenManager.graphics = new GraphicsDeviceManager(this);
+        {            
+            ScreenManager.Initialize(this);
             Content.RootDirectory = "Content";
         }
 
@@ -76,7 +75,7 @@ namespace BumbleHollow
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            ScreenManager.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
+            ScreenManager.spriteBatch.Begin();
             ScreenManager.spriteBatch.Draw(sprite_texture, sprite_position, Color.White);
             ScreenManager.spriteBatch.End();
 
